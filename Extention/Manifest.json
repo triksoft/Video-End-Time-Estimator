@@ -1,14 +1,18 @@
 {
-    "manifest_version": 3,
-    "name": "Video End Time Estimator",
-    "version": "1.0",
-    "description": "Shows the estimated finishing time of videos being played.",
-    "permissions": ["scripting", "activeTab"],
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
+  "manifest_version": 3,
+  "name": "YouTube Video End Time",
+  "version": "1.0",
+  "description": "Shows what time the current YouTube video will finish playing.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
-  
+}
