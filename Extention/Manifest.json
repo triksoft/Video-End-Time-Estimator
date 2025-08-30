@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Video End Time Estimator",
+    "version": "1.0",
+    "description": "Shows the estimated finishing time of videos being played.",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
